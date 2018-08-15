@@ -1,0 +1,133 @@
+\documentclass[11pt,a4paper]{newrucsthesis}
+\usepackage[top=165pt,bottom=15pt,left=130pt,right=50pt]{geometry}  % to make pages wider
+	
+\usepackage{graphicx}  % need this for figures etc.
+\usepackage{url}  % to handle urls 
+\usepackage[comma,authoryear]{natbib}  % for authordate ref style --  allows \citet (textual), and \citep (parenthesized)
+
+\renewcommand {\cite} {\citep}  % default for cite is citet in natbib - so change it
+\renewcommand\bibname{References}    % if not using newrucsthesis sty file
+
+\begin{document}
+
+	
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for horizontal lines, change thickness here
+	
+	\center % Centre everything on the page
+	
+	%------------------------------------------------
+	%	Headings
+	%------------------------------------------------
+	
+	\textsc{\LARGE Rhodes University}\\[1.5cm] % Main heading such as the name of your university/college
+	
+	\textsc{\Large Computer Science department}\\[0.5cm] % Major heading such as course name
+	
+	\textsc{\large Realtime Multimedia}\\[0.5cm] % Minor heading such as course title
+	
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+	
+	\HRule\\[0.4cm]
+	
+	{\huge\bfseries Net Neutrality}\\[0.4cm] % Title of your document
+	
+	\HRule\\[1.5cm]
+	
+	%------------------------------------------------
+	%	Author(s)
+	%------------------------------------------------
+	
+	\begin{minipage}{0.4\textwidth}
+			\centering
+			\large
+			\textit{Author}\\
+			Jason \textsc{Spencer} % Your name
+		
+	\end{minipage}
+
+	
+	% If you don't want a supervisor, uncomment the two lines below and comment the code above
+	%{\large\textit{Author}}\\
+	%John \textsc{Smith} % Your name
+	
+	%------------------------------------------------
+	%	Date
+	%------------------------------------------------
+	
+	\vfill\vfill\vfill % Position the date 3/4 down the remaining page
+	
+	{\large May, 2018} % Date, change the \today to a set date if you want to be precise
+	
+	%------------------------------------------------
+	%	Logo
+	%------------------------------------------------
+	
+	\vfill\vfill
+	\includegraphics[width=0.35\textwidth]{Rhodes.png}\\[1cm] % Include a department/university logo - this will require the graphicx package
+	
+	%----------------------------------------------------------------------------------------
+	
+	%\vfill % Push the date up 1/4 of the remaining page
+	
+\end{titlepage}
+
+%----------------------------------------------------------------------------------------
+%	END TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+
+
+
+\newpage	
+%----------------------------------------------------------------------------------------
+%	CONTENT
+%----------------------------------------------------------------------------------------
+
+Net neutrailty or open internet is a tough subject that often has miconseptions and so in the essay I try to clarify exactly what net neutraily is, and the prositives and negatives associated with it from the different viewpoints \cite{net}. The Federal Communications Commission (FCC) have defined net neutrality, according to \citet{jeremy2018}, as  where there is no blocking, or throttling of content on the internet and there is no paid prioritisation. As stated by \cite{jeremy2018}, ISPs want to treat data and companies differently.
+
+Paid prioritisation occurs when a an ISP accepts some sort of payment, made by a company to manage its network in a way that benefits their particular content \cite{paidprio}. This paid prioritization results in aggrandizement of data transfer rates \cite{paidp}. This creates the possibility of "fast lanes" \cite{paidp}. The idea of fast lanes and by extention slow lanes comes from the idea that ISPs want to treat the data differently \cite{fast}. The ISPs wont be creating a newer faster lane for the company that pays for the faster serrvice but instead they will be ruining the quality of the old \textit{lane} and calling it the slow lane. This essentially forces companies to pay for the fast lane in order to compete with the compitition \cite{fast}. 
+
+Now lets assume that a company like Netflix pays extra so that they can go through multiple ISPs and make there internet faster. Although we currently use peering agreements that is used to help everyone get better access to the internet whereas this only helps those who pay for extra service. Netflix currently pays for this service through Comcast.
+
+
+There have been a various cornucopia of analogies for "What net neutrality \textit{is}". Because net neutrailty is such a complex subject that has so many misconceptions alot of these, analogies have been misleading to those engaged with it - one of these is the anaolgy created and run by the multinational corperation \textit{Burger King}. Although there message was clear; "educate the public about net neutrailty and what ISPs could do if they are unrestricted" there understandding of the \textit{problem} at hand was also flawed. A common misconseption with net neutrailty is that one cannot pay for a faster internet(bandwidth) in net neutrality. This is of course not true but the ad shows the customers getting offered the faster service (better bandwidth) and the being shown as wrong or immoral but internet provider should be allowed to sell some users faster internet. However they did get some thigs right in this advert - we should not be forced to use a service because if we don't then we will have to wait; like in the advert were customers are offered to get the chicken sandwich right now - its not that different and you will be full when you leave but you werent able to get what you actually wanted. In a more technical view - if you wanted to watch an episode of your favorite TV show on DSTV Now, but Netflix had paid for a faster lane and so you are told if you go to Netflix you can watch the episode there or you can wait in line to watch the show on your website - you will most likely move to Netflix eventually and this is taking the freedom of the internet away from you. 
+
+Lets say there are two companies under the same roof, owned by the same owner and they both sell burgers. now in a open internet world you could go grab a burger from the company of your choice and the line would be based on how many people also chose the same service but the choice would be yours. Now lets say that at the door the owner of the building is standing there saying that if you go to the company on the right you will get your burger right away and if you go to the one on the left you will have to wait half an hour - not because the dont have burgers but because the company on the left havent paid the owner money to allow them fast service. The owner then tells you that if you pay him money you will be push to the front of the queue over all the other people. 
+
+History of Net Neutrailty, sounds like a long span of time but just over the last decade there has been a tremendious amount of change. In October 2007,  Electronic Frontier Foundation (A Nonprofit organisation founded in 1990 - that fights for freedom of speech, intellectual property and innovation) published an investigation, showing Comcast is injecting forged RST packets into BitTorrent TCP sessions \cite{jeremy2018}. August the folloing year FCC ordered them to stop \cite{jeremy2018}. Comcast challenged this judgment in September - and the D.C. Circuit ruled in favor of Comcast. Later this year(2010) the FCC released first Open Internet Order \cite{jeremy2018}. Verizon challenged this. Fastforward to 2014 D.C. Circuit strikes down first Open Internet Order. The circuit stated that the FCC "common-carrier rules without reclassification" \cite{jeremy2018}. March of the following year, the FCC released a second Open Internet Order. This Order they reclassified broadband rules \cite{jeremy2018}. This Order was again challenged\cite{jeremy2018}. Republican party member Donald J. Trump, then won the President, having the backing of the republican party in the FCC, they repealed Open Internet Order, in December 2017 \cite{jeremy2018}. Most recently on the 10th May 2018 a ruling was made that states that net neutrality rules will expire on June 11 \cite{history}. 
+
+People who are against Net Neutrality believe that companies that \textit{hog} the bandwidth like Netflix should be paying  more \cite{jeremy2018}. This is because they place a heavy burden on broadband networks \cite{jeremy2018}
+
+
+Net neutrailty has its merits and also its fallbacks. Firstly I'd like to acknowledge the benefits of non-net neutrality - realtime multimedia can benefit from the FCCs new rule to repeal Net neutrailty restrictions. The ability to decide that yes it probably isnt a big deal to push a search on \textit{Facebook} down the queue and your stream up from \textit{Netflix} up the queue so that it can be an uninterupted service - would generally be seen as a benefit. Another argument for no net neutrailty is that ISP are providing you with you internet services, with no promises, and therefore why wouldt they do everything they could to make as much money as they can; I.E. their thervice and if you dont wan't to buy into then simply don't.\\ 
+On the other hand why should I get throttled for not using the internet the way you want me too. Having paid for the service users should be allowed to use the internet exactly how and when they'd like too. Because of this users will no longer have the option to choose who they want to, for example search through as they will be slowed down if they dont use the right site with the right ISP. This also means their providers could regulate who gets prefrence - and in a society with so many inequlities i do not believe more segregation is the answer and i dont belive that the internet providers should be able decide who get prefrence based financial status, as was suggested is being done by \citet{clark2018}. 
+
+
+
+\textbf{Word Count - 1238}
+%----------------------------------------------------------------------------------------
+%	CONTENT
+%----------------------------------------------------------------------------------------
+
+
+
+\newpage
+
+
+\bibliographystyle{ruauthordate}
+ 
+\bibliography{ref}   	% load in the citation info from ref.bib
+
+
+\end{document}
+
+
+
+
